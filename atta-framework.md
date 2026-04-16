@@ -1,11 +1,11 @@
 # AI Transparency & Trustworthiness Assessment (ATTA)
-## Framework Documentation — v3.1
+## Framework Documentation — v3.2
 
 **Document type:** Public transparency documentation
 
-**Framework version:** ATTA v3.1
+**Framework version:** ATTA v3.2
 
-**Last updated:** April 2026 (v3.1)
+**Last updated:** April 2026
 
 **Status:** Active
 
@@ -571,7 +571,19 @@ When a valid challenge is submitted with new evidence, the specific criterion sc
 
 ## 13. Version History & Change Log
 
-### v3.1 — April 2026 (current)
+### v3.2 — April 2026 (current)
+
+**DXT (Documentation & Experience Transparency) module added as optional extension:**
+- 20 new criteria across 4 dimensions: Help Center (DXT-A), Developer API (DXT-B), Operational Transparency (DXT-C), In-Product AI UX (DXT-D)
+- `--extended-criteria dxt_criteria.json` flag runs ATTA + DXT in a single scorer pass
+- Reporter auto-detects and renders DXT addendum in both HTML and Markdown
+- Combined ATTA + DXT score header displayed at top of reports when module is enabled
+- DXT score is independent — does not affect ATTA total
+- All four DXT dimensions weighted equally at 25% (no industry profiling)
+
+---
+
+### v3.1 — April 2026
 
 **Evidence Maturity label system replaces binary quality labels:**
 
